@@ -2,10 +2,6 @@ import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle2, Star } from 'lucide-react';
 
-import isItTuesdayImg from '../assets/isittuesdayyet.png';
-import doneifyImg from '../assets/doneify.png';
-import landingPageVid from '../assets/landingpagevid.mp4';
-
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
   whileInView: { opacity: 1, y: 0 },
@@ -25,10 +21,10 @@ export default function Home() {
             muted
             playsInline
             preload="auto"
-            poster={isItTuesdayImg}
-            className="w-full h-full object-cover opacity-50"
+            poster="/isittuesdayyet.png"
+            className="w-full h-full object-cover opacity-70"
           >
-            <source src={landingPageVid} type="video/mp4" />
+            <source src="/landingpagevid.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black" />
         </div>
@@ -134,8 +130,8 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {[
-              { title: 'Is it Tuesday yet?', category: 'Web Application', img: isItTuesdayImg, url: 'https://isittuesdayyet.netlify.app/' },
-              { title: 'Doneify', category: 'Productivity Tool', img: doneifyImg, url: 'https://luvyasavaria.github.io/doneify/' },
+              { title: 'Is it Tuesday yet?', category: 'Web Application', img: '/isittuesdayyet.png', url: 'https://isittuesdayyet.netlify.app/' },
+              { title: 'Doneify', category: 'Productivity Tool', img: '/doneify.png', url: 'https://luvyasavaria.github.io/doneify/' },
             ].map((project, i) => (
               <motion.a
                 key={i}
