@@ -6,14 +6,14 @@ const projects = [
     title: 'Is it Tuesday yet?',
     category: 'Web Application',
     description: 'A minimalist web application that answers the age-old question.',
-    image: `${import.meta.env.BASE_URL}isittuesdayyet.png`,
+    image: '/isittuesdayyet.png',
     url: 'https://isittuesdayyet.netlify.app/'
   },
   {
     title: 'Doneify',
     category: 'Productivity Tool',
     description: 'A premium productivity platform designed for high-performance teams.',
-    image: `${import.meta.env.BASE_URL}Doneify.png`,
+    image: '/Doneify.png',
     url: 'https://luvyasavaria.github.io/doneify/'
   }
 ];
