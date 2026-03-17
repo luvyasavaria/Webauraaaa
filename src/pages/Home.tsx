@@ -21,10 +21,10 @@ export default function Home() {
             muted
             playsInline
             preload="auto"
-            poster="/isittuesdayyet.png"
+            poster="isittuesdayyet.png"
             className="w-full h-full object-cover opacity-50"
           >
-            <source src="/landingpagevid.mp4" type="video/mp4" />
+            <source src="landingpagevid.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black" />
         </div>
@@ -130,8 +130,8 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {[
-              { title: 'Is it Tuesday yet?', category: 'Web Application', img: '/isittuesdayyet.png', url: 'https://isittuesdayyet.netlify.app/' },
-              { title: 'Doneify', category: 'Productivity Tool', img: '/Doneify.png', url: 'https://luvyasavaria.github.io/doneify/' },
+              { title: 'Is it Tuesday yet?', category: 'Web Application', img: 'isittuesdayyet.png', url: 'https://isittuesdayyet.netlify.app/' },
+              { title: 'Doneify', category: 'Productivity Tool', img: 'Doneify.png', url: 'https://luvyasavaria.github.io/doneify/' },
             ].map((project, i) => (
               <motion.a
                 key={i}
