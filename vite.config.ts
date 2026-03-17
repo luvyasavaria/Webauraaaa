@@ -8,6 +8,7 @@ export default defineConfig(({mode}) => {
   return {
     base: '/',
     plugins: [react(), tailwindcss()],
+    assetsInclude: ['**/*.mp4'],
     define: {},
     resolve: {
       alias: {
