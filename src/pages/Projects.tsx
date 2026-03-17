@@ -1,19 +1,21 @@
 import { motion } from 'motion/react';
 import { ExternalLink } from 'lucide-react';
+import tuesdayImg from '../assets/isittuesdayyet.png';
+import doneifyImg from '../assets/Doneify.png';
 
 const projects = [
   {
     title: 'Is it Tuesday yet?',
     category: 'Web Application',
     description: 'A minimalist web application that answers the age-old question.',
-    image: 'isittuesdayyet.png',
+    image: tuesdayImg,
     url: 'https://isittuesdayyet.netlify.app/'
   },
   {
     title: 'Doneify',
     category: 'Productivity Tool',
     description: 'A premium productivity platform designed for high-performance teams.',
-    image: 'Doneify.png',
+    image: doneifyImg,
     url: 'https://luvyasavaria.github.io/doneify/'
   }
 ];
