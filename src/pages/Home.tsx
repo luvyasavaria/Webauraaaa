@@ -13,19 +13,13 @@ export default function Home() {
   return (
     <div className="bg-black">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="auto"
-            poster="isittuesdayyet.png"
-            className="w-full h-full object-cover opacity-50"
-          >
-            <source src="landingpagevid.mp4" type="video/mp4" />
-          </video>
+      <section className="relative h-screen flex items-center justify-center overflow-hidden border-4 border-red-500">
+        <div className="absolute inset-0 z-0 bg-[#0a0a0a]">
+          <img
+            src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1920"
+            alt="Hero Background"
+            className="w-full h-full object-cover opacity-30"
+          />
           <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black" />
         </div>
 
@@ -130,8 +124,8 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {[
-              { title: 'Is it Tuesday yet?', category: 'Web Application', img: 'isittuesdayyet.png', url: 'https://isittuesdayyet.netlify.app/' },
-              { title: 'Doneify', category: 'Productivity Tool', img: 'Doneify.png', url: 'https://luvyasavaria.github.io/doneify/' },
+              { title: 'Is it Tuesday yet?', category: 'Web Application', img: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800', url: 'https://isittuesdayyet.netlify.app/' },
+              { title: 'Doneify', category: 'Productivity Tool', img: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=800', url: 'https://luvyasavaria.github.io/doneify/' },
             ].map((project, i) => (
               <motion.a
                 key={i}

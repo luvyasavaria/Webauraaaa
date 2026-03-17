@@ -6,14 +6,14 @@ const projects = [
     title: 'Is it Tuesday yet?',
     category: 'Web Application',
     description: 'A minimalist web application that answers the age-old question.',
-    image: 'isittuesdayyet.png',
+    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800',
     url: 'https://isittuesdayyet.netlify.app/'
   },
   {
     title: 'Doneify',
     category: 'Productivity Tool',
     description: 'A premium productivity platform designed for high-performance teams.',
-    image: 'Doneify.png',
+    image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=800',
     url: 'https://luvyasavaria.github.io/doneify/'
   }
 ];
