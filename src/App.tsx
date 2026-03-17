@@ -27,7 +27,7 @@ function ScrollToTop() {
 export default function App() {
   return (
     <Router>
-      {/* <CustomCursor /> */}
+      <CustomCursor />
       <ScrollToTop />
       <Layout>
         <Routes>
